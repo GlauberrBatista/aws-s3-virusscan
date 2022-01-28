@@ -1024,6 +1024,7 @@ Resources:
       BlockDeviceMappings:
       - DeviceName: '/dev/xvda'
         Ebs:
+          Encrypted: true
           VolumeSize: !Ref VolumeSize
           VolumeType: gp2
       IamInstanceProfile: !Ref ScanInstanceProfile
